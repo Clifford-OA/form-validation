@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<title>Form Validation</title>
+</head>
+<body>
+       <div class="container">
+       	<h1>TechBiznez Sign Up Form</h1>
+       	<div class="row">
+       		<form class="col s6" id="myForm" novalidate>
+       			<!-- ---first Row---- -->
+       			<div class="row">
+       				<div class="input-field col s6">
+       					<label for="firstName">First Name</label>
+       					<input type="text" name="First Name" id="firstName" onfocusout="validateFirstName()">
+       					<span class="helper-text"></span>
+       				</div>
+       				<div class="input-field col s6">
+       					<label for="lastName">Last Name</label>
+       					<input type="text" name="Last Name" id="lastName" onfocusout="validateLastName()">
+       					<span class="helper-text"></span>
+       				</div>
+       			</div>
+               <!-- ------Second Row--- -->
+            <div class="row">
+               	<div class="input-field col s6">
+	               	<label for="password">Password</label>
+	               	 <input type="password" name="Password" id="password" onfocusout="validatePassword()">
+	               	 <span class="helper-text"></span>
+               	</div>
+               	<div class="input-field col s6">
+	               	<label for="confirmPassword">Confirm Password</label>
+	               	 <input type="password" name="Confirm Password" id="confirmPassword" onfocusout="validateConfirmPassword()">
+	               	 <span class="helper-text"></span>
+               	</div>
+            </div>
+            <!-- -----Third row----- -->
+
+            <div class="row">
+            	<div class="input-field col s6">
+            		<label for="phoneNumber">Phone Number</label>
+            		<input type="text" name="Phone Number" id="phoneNumber"onfocusout="validatePhoneNumber()">
+            		<span class="helper-text"></span>
+            	</div>
+            	<div class="input-field col s6">
+            		<label for="email">Email</label>
+            		<input type="email" name="Email" id="email"onfocusout="validateEmail()">
+            		<span class="helper-text"></span>
+            	</div>
+            </div>
+            <div id="new">
+              <a id="link" href="#"><button class="btn waves-effect waves-light" type="submit">Sign Up</button></a>
+            </div>
+            <span class="helper-text"></span>
+       		</form>
+       		<div class="col s6">
+       			<img src="sideImage.jpg" style="width: 100%; border-radius: 6px;">
+       		</div>
+       	</div>
+       </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
